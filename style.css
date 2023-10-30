@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(./logo_bg/background5.jpg);
+  background-image: url(./logo_bg/bbg.jpg);
   background-attachment: fixed;
   /* Center and scale the image nicely */
   background-position: center;
@@ -14,8 +14,8 @@ body {
   color: beige;
 }
 .logo-image {
-  height: 120px;
-  width: 150px;
+  height: 100px;
+  width: 250px;
 }
 .header-container {
   margin: 0 20px;
@@ -47,7 +47,13 @@ section {
   min-width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.section-container {
+
+.section-content {
+  text-align: center;
+  margin: 0 5%;
+}
+
+/* .section-container {
   display: flex;
   flex-direction: column;
   height: 80%;
@@ -55,7 +61,8 @@ section {
   word-wrap: break-word;
   margin-top: 40px;
   padding: 0 60px;
-}
+} */
+
 .section-heading {
   font-size: 30px;
   padding: 10px;
@@ -81,6 +88,7 @@ section {
 
 .logo-container {
   display: flex;
+  justify-content: center;
 }
 .logo {
   padding: 0 10px;
