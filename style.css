@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", serif;
+}
+
+body {
+  background-image: url(./logo_bg/background5.jpg);
+  background-attachment: fixed;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: beige;
+}
+.logo-image {
+  height: 120px;
+  width: 150px;
+}
+.header-container {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+}
+
+.menu {
+  margin: 5px;
+  height: 4px;
+  width: 40px;
+  background-color: rgb(0, 0, 0);
+}
+
+.header-menu {
+  margin-top: 30px;
+  margin-right: 20px;
+}
+section {
+  /* background-color: #ba7ddd; */
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  margin: 0 10%;
+  margin-bottom: 50px;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgba(24, 24, 24, 0.2);
+  min-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.section-container {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  align-items: center;
+  word-wrap: break-word;
+  margin-top: 40px;
+  padding: 0 60px;
+}
+.section-heading {
+  font-size: 30px;
+  padding: 10px;
+  font-weight: 300;
+}
+.section-about {
+  font-size: 40px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.section-description {
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 200;
+}
+
+.section-links {
+  font-size: 30px;
+  color: rgb(235, 164, 99);
+  padding: 0 20px;
+}
+
+.logo-container {
+  display: flex;
+}
+.logo {
+  padding: 0 10px;
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+}
+/* work section css */
+
+.section-about {
+  text-align: center;
+}
+
+.work-card {
+  margin: 0 5%;
+
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.work-card-bg {
+  margin: 10px 0;
+  justify-content: center;
+}
+
+.work-image {
+  margin: 2% 3%;
+}
+.image-size {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-heading {
+  margin: 2% 5%;
+  font-size: 30px;
+  font-weight: 200;
+}
+.project-info {
+  margin: 2% 5%;
+  font-size: 20px;
+  font-weight: 200;
+}
+.project-description {
+  margin: 2% 5%;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.project-tools {
+  margin: 2% 5%;
+  font-size: 20px;
+  font-weight: 100;
+  list-style: none;
+}
+.tool-name {
+  display: inline-block;
+  margin-right: 5%;
+  background-color: rgb(164, 224, 224);
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.work-btn {
+  background: rgb(50, 125, 211);
+  border: 2px solid rgb(8, 8, 8);
+  border-radius: 10px;
+  height: 50px;
+  width: 180px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin: 2% 5%;
+}
+.work-btn span {
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.work-btn span:after {
+  content: "\00bb";
+  position: absolute;
+
+  opacity: 0;
+  top: 0;
+  transition: 0.3s;
+}
+
+.work-btn:hover span {
+  padding-right: 22px;
+}
+
+.work-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.work-btn:hover {
+  background: transparent;
+  border: 2px solid rgb(72, 152, 226);
+  border-radius: 10px;
+  height: 50px;
+  width: 180px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin: 2% 5%;
+  cursor: pointer;
+}
