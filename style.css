@@ -8,7 +8,7 @@ body {
   background-image: url(./logo_bg/bbg.jpg);
   background-attachment: fixed;
   /* Center and scale the image nicely */
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   color: beige;
