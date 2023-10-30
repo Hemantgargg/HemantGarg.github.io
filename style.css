@@ -91,8 +91,8 @@ section {
   justify-content: center;
 }
 .logo {
-  padding: 0 10px;
-  margin: 10px;
+  /* padding: 0 10px; */
+  margin: 10px 15px;
   height: 30px;
   width: 30px;
 }
@@ -147,7 +147,7 @@ section {
 }
 .tool-name {
   display: inline-block;
-  margin-right: 5%;
+  margin: 0 10px;
   background-color: rgb(164, 224, 224);
   padding: 5px;
   border-radius: 5px;
