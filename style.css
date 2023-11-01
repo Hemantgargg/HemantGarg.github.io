@@ -286,3 +286,54 @@ section {
     cursor: pointer;
   }
 }
+
+/* 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+input,
+textarea {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30%;
+  height: 30px;
+  width: 300px;
+  overflow: hidden;
+} */
+
+/* Make the form responsive */
+.contact-form {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Center the inputs and textarea */
+.name-form,
+.email-form,
+.text-form {
+  border-radius: 8px;
+  border: 2px solid rgb(102, 175, 209);
+  height: 30px;
+  display: block;
+  margin: 16px auto;
+  width: 100%;
+  max-width: 70%;
+  padding: 5px 10px;
+}
+
+.text-form {
+  min-height: 120px;
+  padding-top: 10px;
+}
+/* Media query for smaller screens */
+@media (max-width: 576px) {
+  .name-form,
+  .email-form,
+  .text-form {
+    max-width: 70%;
+  }
+}
