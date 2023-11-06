@@ -2,53 +2,80 @@
   margin: 0;
   padding: 0;
   font-family: "Times New Roman", serif;
+  font-size: 16px;
+  color: beige;
 }
 
 body {
-  background: linear-gradient(
-    90deg,
-    rgba(216, 147, 255, 0.41780462184873945) 10%,
-    rgba(255, 255, 255, 1) 47%,
-    rgba(0, 212, 255, 0.41780462184873945) 90%
-  );
-  /* Center and scale the image nicely */
-
+  background-color: rgb(22, 22, 22);
   color: beige;
 }
-.logo-image {
-  margin-top: 10px;
-  height: 50px;
-  width: 125px;
+.logo-name-heading {
+  font-family: "Poppins", sans-serif;
+  margin: 15px;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 4px;
 }
+.nav-link {
+  margin: 25px;
+}
+.nav-link a {
+  padding: 0 10px;
+  text-decoration: none;
+}
+
 .header-container {
-  margin: 0 20px;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(68, 68, 68);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 5%;
+  z-index: 1;
 }
 
-.menu {
-  margin: 4px;
-  height: 3px;
-  width: 30px;
-  background-color: rgb(0, 0, 0);
+.section-main {
+  margin-top: 140px;
+  margin-left: 15%;
+  margin-right: 15%;
+  max-width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+.main-intro {
+  margin: 50px 20px;
 }
 
-.header-menu {
-  margin-top: 20px;
-  margin-right: 20px;
+.main-image-size {
+  height: 400px;
+
+  float: right;
+}
+.main-heading {
+  font-size: 3rem;
+  margin: 20px;
+  text-align: center;
+}
+.main-content {
+  font-size: 1.5rem;
+  text-align: center;
 }
 section {
-  /* background-color: #ba7ddd; */
   background: transparent;
   backdrop-filter: blur(20px);
   border-radius: 10px;
   margin: 0 10%;
   margin-bottom: 50px;
-  color: rgb(0, 0, 0);
-  border: 2px solid rgba(24, 24, 24, 0.2);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   min-width: 300px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
 .section-content {
@@ -56,35 +83,29 @@ section {
   margin: 0 5%;
 }
 
-/* .section-container {
-  display: flex;
-  flex-direction: column;
-  height: 80%;
-  align-items: center;
-  word-wrap: break-word;
-  margin-top: 40px;
-  padding: 0 60px;
-} */
+.section-container {
+  margin-top: 100px;
+}
 
 .section-heading {
-  font-size: 30px;
+  font-size: 2rem;
   padding: 10px;
   font-weight: 300;
 }
 .section-about {
-  font-size: 40px;
+  font-size: 2.5rem;
   padding: 10px;
   font-weight: 400;
 }
 
 .section-description {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 20px 0;
   font-weight: 200;
 }
 
 .section-links {
-  font-size: 30px;
+  font-size: 2rem;
   color: rgb(235, 164, 99);
   padding: 0 20px;
 }
@@ -128,23 +149,23 @@ section {
 
 .project-heading {
   margin: 2% 5%;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 200;
 }
 .project-info {
   margin: 2% 5%;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 200;
 }
 .project-description {
   margin: 2% 5%;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 100;
 }
 
 .project-tools {
   margin: 2% 5%;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 200;
   list-style: none;
 }
@@ -152,9 +173,9 @@ section {
   display: inline-block;
   margin: 0 10px;
   padding: 5px;
-  border: 2px solid gray;
+  border: 2px solid rgb(216, 185, 10);
   border-radius: 5px;
-  color: rgb(0, 0, 0);
+  color: rgb(216, 185, 10);
 }
 
 .work-btn {
@@ -164,7 +185,7 @@ section {
   height: 50px;
   width: 180px;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 2% 5%;
 }
 .work-btn span {
@@ -193,68 +214,109 @@ section {
 
 .work-btn:hover {
   background: transparent;
-  border: 2px solid rgb(72, 152, 226);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
   height: 50px;
   width: 180px;
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 2% 5%;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   body {
-    background-color: beige;
-  }
-  .logo-image {
-    margin-top: 10px;
-    height: 30px;
-    width: 90px;
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: beige;
   }
 
+  .section-main {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width:auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .main-image{
+    
+    margin: auto auto;
+  }
+
+  .main-image-size {
+    height: 400px;
+  }
+  .menu {
+    margin: 4px;
+    height: 3px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+  }
+  .header-menu {
+    margin-top: 23px;
+    margin-right: 20px;
+  }
+  .main-content{
+font-size: 1rem;
+  }
+  .main-heading{
+font-size: 2rem;
+margin-bottom: 40px;
+  }
+  .nav-link {
+    display: none;
+  }
   .section-heading {
-    font-size: 18px;
+    font-size: 1.25rem;
     padding: 10px;
     font-weight: 300;
   }
   .section-about {
-    font-size: 25px;
+    font-size: 1.5rem;
     padding: 10px;
     font-weight: 400;
   }
 
   .section-description {
-    font-size: 12px;
+    font-size: 0.75rem;
     margin: 20px 0;
     font-weight: 200;
   }
 
   .section-links {
-    font-size: 18px;
+    font-size: 1rem;
     color: rgb(235, 164, 99);
     padding: 0 20px;
   }
 
   .project-heading {
     margin: 4px 5px;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 200;
   }
   .project-info {
     margin: 4px 5px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 200;
   }
   .project-description {
     margin: 4px 5px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 200;
   }
 
   .project-tools {
     margin: 4px 5px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 200;
     list-style: none;
   }
@@ -266,7 +328,7 @@ section {
     height: 30px;
     width: 120px;
     color: rgb(255, 255, 255);
-    font-size: 12px;
+    font-size: 0.75rem;
     margin: 4px 5px;
   }
 
@@ -276,12 +338,12 @@ section {
 
   .work-btn:hover {
     background: transparent;
-    border: 1px solid rgb(72, 152, 226);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
     height: 30px;
     width: 120px;
     color: rgb(0, 0, 0);
-    font-size: 12px;
+    font-size: 0.75rem;
     margin: 4px 5px;
     cursor: pointer;
   }
