@@ -16,7 +16,9 @@
   <body>
     <header class="header-container">
       <div class="logo-name">
-        <h1 class="logo-name-heading">HEMANT</h1>
+        <h1 class="logo-name-heading">
+          <a class="logo-name-link" href="/">HEMANT</a>
+        </h1>
       </div>
 
       <div class="menu-btn">
@@ -27,16 +29,17 @@
         </h1>
       </div>
       <div class="nav-link">
-        <a href="/">HOME</a>
-        <a href="/">MY WORK</a>
-        <a href="/">ABOUT</a>
-        <a href="/">RESUME</a>
-        <a href="/">CONTACT</a>
+        <a class="anchor" href="/">HOME</a>
+        <a class="anchor" href="#projects">PROJECTS</a>
+        <a class="anchor" href="#about">ABOUT</a>
+        <a class="anchor" href="/">RESUME</a>
+        <a class="anchor" href="#contact">CONTACT</a>
       </div>
     </header>
-    <div class="section-main">
+
+    <div id="home" class="section-main">
       <div class="main-intro">
-        <h1 class="main-heading">I'm hemant Garg glad to See you!</h1>
+        <h1 class="main-heading">I'm Hemant Garg glad to See you!</h1>
         <p class="main-content">
           I am a software developer! I can help you build a product, feature or
           website. Look through some of my work and experience! If you like what
@@ -53,8 +56,9 @@
         />
       </div>
     </div>
-    <section class="section-container">
-      <h1 class="section-about">MY WORK</h1>
+
+    <section id="projects" class="section-container">
+      <h1 class="section-about">MY PROJECTS</h1>
       <div class="work-card">
         <div class="work-card-bg">
           <div class="work-image">
@@ -66,15 +70,15 @@
             />
           </div>
           <div class="work-name">
-            <h3 class="project-heading">Project</h3>
+            <h3 class="project-heading">Fine Touch interiors & Decor</h3>
           </div>
           <div class="work-description">
-            <p class="project-info">Website * FrontEnd * 2023</p>
+            <p class="project-info">Website ● FrontEnd ● 2023</p>
           </div>
           <div class="work-uses">
             <p class="project-description">
-              Fully working Website for interiors and furniture decoration
-              buisness.
+              Fully working Website for interiors and furniture designing
+              business.
             </p>
           </div>
           <div class="work-tools">
@@ -84,11 +88,85 @@
               <li class="tool-name">JavaScript</li>
             </ul>
           </div>
-          <button class="work-btn"><span>See Project </span></button>
+          <button class="work-btn">
+            <a href="http://finetouchdecorandinterior.com/" target="_blank"
+              ><span>See Project </span></a
+            >
+          </button>
         </div>
       </div>
-    </section>
-    <section>
+
+      <div class="work-card">
+        <div class="work-card-bg">
+          <div class="work-image">
+            <img
+              class="image-size"
+              src="./projectimg/Screenshot (1).png"
+              alt="project"
+              srcset=""
+            />
+          </div>
+          <div class="work-name">
+            <h3 class="project-heading">Bhagat singh the legend</h3>
+          </div>
+          <div class="work-description">
+            <p class="project-info">Webpage ● FrontEnd ● 2023</p>
+          </div>
+          <div class="work-uses">
+            <p class="project-description">
+              Portfolio - Bhagat singh the legend.
+            </p>
+          </div>
+          <div class="work-tools">
+            <ul class="project-tools">
+              <li class="tool-name">Html</li>
+              <li class="tool-name">Css</li>
+            </ul>
+          </div>
+          <button class="work-btn">
+            <a href="https://legendbhagatsingh.netlify.app/" target="_blank"
+              ><span>See Project </span></a
+            >
+          </button>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <div class="work-card-bg">
+          <div class="work-image">
+            <img
+              class="image-size"
+              src="./projectimg/Screenshot (2).png"
+              alt="project"
+              srcset=""
+            />
+          </div>
+          <div class="work-name">
+            <h3 class="project-heading">Web Based Calculator</h3>
+          </div>
+          <div class="work-description">
+            <p class="project-info">Webpage ● FrontEnd ● 2023</p>
+          </div>
+          <div class="work-uses">
+            <p class="project-description">
+              fully functioned web based Calculator application.
+            </p>
+          </div>
+          <div class="work-tools">
+            <ul class="project-tools">
+              <li class="tool-name">Html</li>
+              <li class="tool-name">Css</li>
+              <li class="tool-name">JavaScript</li>
+            </ul>
+          </div>
+          <button class="work-btn">
+            <a href="https://calculatorbyhemant.netlify.app/" target="_blank"
+              ><span>See Project </span></a
+            >
+          </button>
+        </div>
+      </div>
+
       <div class="work-card">
         <div class="work-card-bg">
           <div class="work-image">
@@ -100,15 +178,15 @@
             />
           </div>
           <div class="work-name">
-            <h3 class="project-heading">Project</h3>
+            <h3 class="project-heading">Fine touch Productions</h3>
           </div>
           <div class="work-description">
-            <p class="project-info">Website * FrontEnd * 2023</p>
+            <p class="project-info">Website ● FrontEnd ● 2023</p>
           </div>
           <div class="work-uses">
             <p class="project-description">
-              Fully working Website for interiors and furniture decoration
-              buisness.
+              Fully working Website for Wedding photography, product shoot,
+              pre-wedding and much more.
             </p>
           </div>
           <div class="work-tools">
@@ -118,11 +196,14 @@
               <li class="tool-name">JavaScript</li>
             </ul>
           </div>
-          <button class="work-btn"><span>See Project </span></button>
+          <button class="work-btn">
+            <a href="https://www.finetouchproductions.com/" target="_blank"
+              ><span>See Project </span></a
+            >
+          </button>
         </div>
       </div>
-    </section>
-    <section>
+
       <div class="work-card">
         <div class="work-card-bg">
           <div class="work-image">
@@ -134,22 +215,21 @@
             />
           </div>
           <div class="work-name">
-            <h3 class="project-heading">Project</h3>
+            <h3 class="project-heading">News Web App</h3>
           </div>
           <div class="work-description">
-            <p class="project-info">Website * FrontEnd * 2023</p>
+            <p class="project-info">Website ● FrontEnd ● 2023</p>
           </div>
           <div class="work-uses">
             <p class="project-description">
-              Fully working Website for interiors and furniture decoration
-              buisness.
+              Fully working Website for latest world-wide News using Api.
             </p>
           </div>
           <div class="work-tools">
             <ul class="project-tools">
               <li class="tool-name">Html</li>
-              <li class="tool-name">Css</li>
-              <li class="tool-name">JavaScript</li>
+              <li class="tool-name">Css & bootstrap</li>
+              <li class="tool-name">React.js</li>
             </ul>
           </div>
           <button class="work-btn"><span>See Project </span></button>
@@ -157,10 +237,10 @@
       </div>
     </section>
 
-    <section class="section-container">
+    <section id="about" class="section-container">
       <div class="section-content">
         <h1 class="section-about">ABOUT ME</h1>
-        <h1 class="section-heading">I'm hemant Garg glad to See you!</h1>
+        <h1 class="section-heading">I'm Hemant Garg glad to See you!</h1>
         <p class="section-description">
           I am a software developer! I can help you build a product, feature or
           website. Look through some of my work and experience! If you like what
@@ -199,13 +279,13 @@
       </div>
     </section>
 
-    <section class="section-container">
+    <section id="contact" class="section-container">
       <div class="section-content">
         <h1 class="section-about">CONTACT ME</h1>
         <p class="section-description">
           If you have an application you are intrested in developing, a feature
           that you need built or a project that needs coding.I'd love to help
-          with it
+          with it.
         </p>
         <form
           class="contact-form"
